@@ -1,5 +1,6 @@
 github.com/studyzy/gmcrypto v0.0.0-20201205182355-719004f6639d h1:1DVA5NAmWUOdfFmaH21z309W8CvDlRCmjQFLJ9wwwEA=
 github.com/studyzy/gmcrypto v0.0.0-20201205182355-719004f6639d/go.mod h1:k9cwfEVR2K3kp10k9Zz7QJOjmPv8xWx/YKuYptwq710=
+github.com/studyzy/gmhttp v0.0.0-20201205180952-371eb63479d4 h1:yJRE0MHLwkhG8dDN9rrcznxzOq8G4KdW/8tuAc/jT0I=
 github.com/studyzy/gmhttp v0.0.0-20201205180952-371eb63479d4/go.mod h1:22mEj2vmyyQZcBDOT0umBV46KzlYGENvQ8OoWTjABxw=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
