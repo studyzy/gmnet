@@ -2,25 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6954c724-f340-441b-aa38-c2bc298785b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/alpn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/alpn_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgi/child.go" beforeDir="false" afterPath="$PROJECT_DIR$/cgi/child.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientserver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clientserver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpn_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/child.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/child_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/host.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/host_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/integration_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/plan9_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/posix_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi/testdata/test.cgi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientserver_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clone.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookie_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/dummy_publicsuffix_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/jar.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/jar_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/punycode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiejar/punycode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_filesystem_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_handle_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcgi/child.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcgi/fcgi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcgi/fcgi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filetransport.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filetransport_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2_bundle.go" beforeDir="false" afterPath="$PROJECT_DIR$/h2_bundle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httptest/httptest.go" beforeDir="false" afterPath="$PROJECT_DIR$/httptest/httptest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httptest/httptest_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/httptest/httptest_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httptest/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/httptest/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httptrace/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/httptrace/trace.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/request.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/serve_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transport.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transport_internal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport_internal_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transport_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2_bundle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/header_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/httptest.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/httptest_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/recorder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/recorder_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptest/server_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptrace/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptrace/trace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httptrace/trace_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/dump.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/dump_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/httputil.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/persist.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/reverseproxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httputil/reverseproxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/cfg/cfg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/chunked.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/chunked_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/nettrace/nettrace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/race/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/race/norace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/race/race.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/testcert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/testenv/testenv.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/testenv/testenv_cgo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/testenv/testenv_notwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/testenv/testenv_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jar.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/method.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omithttp2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pprof/pprof.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pprof/pprof_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/range_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readrequest_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/request.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestwrite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/response_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsewrite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roundtrip.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roundtrip_js.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sniff.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sniff_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socks_bundle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/status.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdata/file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdata/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdata/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transport.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transport_internal_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transport_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/triv.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

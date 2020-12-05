@@ -1,4 +1,4 @@
-module github.com/studyzy/gmhttp
+module github.com/studyzy/gmnet
 
 go 1.14
 
