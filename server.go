@@ -2212,8 +2212,8 @@ func RedirectHandler(url string, code int) Handler {
 // Patterns may optionally begin with a host name, restricting matches to
 // URLs on that host only. Host-specific patterns take precedence over
 // general patterns, so that a handler might register for the two patterns
-// "/codesearch" and "codesearch.google.com/" without also taking over
-// requests for "http://www.google.com/".
+// "/codesearch" and "codesearch.google.cn/" without also taking over
+// requests for "http://www.google.cn/".
 //
 // ServeMux also takes care of sanitizing the URL request path and the Host
 // header, stripping the port number and redirecting any request containing . or

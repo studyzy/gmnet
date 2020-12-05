@@ -43,7 +43,7 @@ var dumpTests = []dumpTest{
 			Method: "GET",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Path:   "/search",
 			},
 			ProtoMajor:       1,
@@ -54,7 +54,7 @@ var dumpTests = []dumpTest{
 		Body: []byte("abcdef"),
 
 		WantDump: "GET /search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"Transfer-Encoding: chunked\r\n\r\n" +
 			chunk("abcdef") + chunk(""),
 	},

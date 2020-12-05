@@ -12,15 +12,16 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/studyzy/gmhttp/internal/testenv"
 	"io"
-	"github.com/studyzy/gmhttp"
-	"github.com/studyzy/gmhttp/httptest"
 	"net/url"
 	"os"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/studyzy/gmhttp"
+	"github.com/studyzy/gmhttp/httptest"
+	"github.com/studyzy/gmhttp/internal/testenv"
 )
 
 // This test is a CGI host (testing host.go) that runs its own binary

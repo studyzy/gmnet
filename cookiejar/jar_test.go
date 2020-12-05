@@ -686,26 +686,26 @@ var updateAndDeleteTests = [...]jarTest{
 	},
 	{
 		"Refill #2.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{
 			"A=6",
 			"A=7; path=/foo",
-			"A=8; domain=.google.com",
-			"A=9; path=/foo; domain=.google.com"},
+			"A=8; domain=.google.cn",
+			"A=9; path=/foo; domain=.google.cn"},
 		"A=1 A=2 A=3 A=4 A=6 A=7 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=4 A=1 A=3"},
-			{"http://www.google.com/foo", "A=7 A=9 A=6 A=8"},
+			{"http://www.google.cn/foo", "A=7 A=9 A=6 A=8"},
 		},
 	},
 	{
 		"Delete A7.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"A=; path=/foo; max-age=-1"},
 		"A=1 A=2 A=3 A=4 A=6 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=4 A=1 A=3"},
-			{"http://www.google.com/foo", "A=9 A=6 A=8"},
+			{"http://www.google.cn/foo", "A=9 A=6 A=8"},
 		},
 	},
 	{
@@ -715,17 +715,17 @@ var updateAndDeleteTests = [...]jarTest{
 		"A=1 A=2 A=3 A=6 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=1 A=3"},
-			{"http://www.google.com/foo", "A=9 A=6 A=8"},
+			{"http://www.google.cn/foo", "A=9 A=6 A=8"},
 		},
 	},
 	{
 		"Delete A6.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"A=; max-age=-1"},
 		"A=1 A=2 A=3 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=1 A=3"},
-			{"http://www.google.com/foo", "A=9 A=8"},
+			{"http://www.google.cn/foo", "A=9 A=8"},
 		},
 	},
 	{
@@ -735,31 +735,31 @@ var updateAndDeleteTests = [...]jarTest{
 		"A=1 A=2 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=1"},
-			{"http://www.google.com/foo", "A=9 A=8"},
+			{"http://www.google.cn/foo", "A=9 A=8"},
 		},
 	},
 	{
 		"No cross-domain delete.",
 		"http://www.host.test",
 		[]string{
-			"A=; domain=google.com; max-age=-1",
-			"A=; path=/foo; domain=google.com; max-age=-1"},
+			"A=; domain=google.cn; max-age=-1",
+			"A=; path=/foo; domain=google.cn; max-age=-1"},
 		"A=1 A=2 A=8 A=9",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=1"},
-			{"http://www.google.com/foo", "A=9 A=8"},
+			{"http://www.google.cn/foo", "A=9 A=8"},
 		},
 	},
 	{
 		"Delete A8 and A9.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{
-			"A=; domain=google.com; max-age=-1",
-			"A=; path=/foo; domain=google.com; max-age=-1"},
+			"A=; domain=google.cn; max-age=-1",
+			"A=; path=/foo; domain=google.cn; max-age=-1"},
 		"A=1 A=2",
 		[]query{
 			{"http://www.host.test/foo", "A=2 A=1"},
-			{"http://www.google.com/foo", ""},
+			{"http://www.google.cn/foo", ""},
 		},
 	},
 }
@@ -809,13 +809,13 @@ func TestExpiration(t *testing.T) {
 var chromiumBasicsTests = [...]jarTest{
 	{
 		"DomainWithTrailingDotTest.",
-		"http://www.google.com/",
+		"http://www.google.cn/",
 		[]string{
-			"a=1; domain=.www.google.com.",
-			"b=2; domain=.www.google.com.."},
+			"a=1; domain=.www.google.cn.",
+			"b=2; domain=.www.google.cn.."},
 		"",
 		[]query{
-			{"http://www.google.com", ""},
+			{"http://www.google.cn", ""},
 		},
 	},
 	{
@@ -889,23 +889,23 @@ var chromiumBasicsTests = [...]jarTest{
 	},
 	{
 		"DomainWithoutLeadingDotTest #2.",
-		"http://www.google.com",
-		[]string{"a=1; domain=www.google.com"},
+		"http://www.google.cn",
+		[]string{"a=1; domain=www.google.cn"},
 		"a=1",
 		[]query{
-			{"http://www.google.com", "a=1"},
-			{"http://sub.www.google.com", "a=1"},
+			{"http://www.google.cn", "a=1"},
+			{"http://sub.www.google.cn", "a=1"},
 			{"http://something-else.com", ""},
 		},
 	},
 	{
 		"CaseInsensitiveDomainTest.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{
-			"a=1; domain=.GOOGLE.COM",
-			"b=2; domain=.www.gOOgLE.coM"},
+			"a=1; domain=.google.cn",
+			"b=2; domain=.www.google.cn"},
 		"a=1 b=2",
-		[]query{{"http://www.google.com", "a=1 b=2"}},
+		[]query{{"http://www.google.cn", "a=1 b=2"}},
 	},
 	{
 		"TestIpAddress #1.",
@@ -951,12 +951,12 @@ var chromiumBasicsTests = [...]jarTest{
 	},
 	{
 		"TestNonDottedAndTLD #4.",
-		"http://google.com",
+		"http://google.cn",
 		[]string{
 			"a=1; domain=.com",
 			"b=2; domain=com"},
 		"",
-		[]query{{"http://google.com", ""}},
+		[]query{{"http://google.cn", ""}},
 	},
 	{
 		"TestNonDottedAndTLD #5.",
@@ -973,12 +973,12 @@ var chromiumBasicsTests = [...]jarTest{
 	},
 	{
 		"TestHostEndsWithDot.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{
 			"a=1",
-			"b=2; domain=.www.google.com."},
+			"b=2; domain=.www.google.cn."},
 		"a=1",
-		[]query{{"http://www.google.com", "a=1"}},
+		[]query{{"http://www.google.cn", "a=1"}},
 	},
 	{
 		"PathTest",
@@ -1069,59 +1069,59 @@ func TestChromiumDomain(t *testing.T) {
 var chromiumDeletionTests = [...]jarTest{
 	{
 		"Create session cookie a1.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"a=1"},
 		"a=1",
-		[]query{{"http://www.google.com", "a=1"}},
+		[]query{{"http://www.google.cn", "a=1"}},
 	},
 	{
 		"Delete sc a1 via MaxAge.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"a=1; max-age=-1"},
 		"",
-		[]query{{"http://www.google.com", ""}},
+		[]query{{"http://www.google.cn", ""}},
 	},
 	{
 		"Create session cookie b2.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"b=2"},
 		"b=2",
-		[]query{{"http://www.google.com", "b=2"}},
+		[]query{{"http://www.google.cn", "b=2"}},
 	},
 	{
 		"Delete sc b2 via Expires.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"b=2; " + expiresIn(-10)},
 		"",
-		[]query{{"http://www.google.com", ""}},
+		[]query{{"http://www.google.cn", ""}},
 	},
 	{
 		"Create persistent cookie c3.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"c=3; max-age=3600"},
 		"c=3",
-		[]query{{"http://www.google.com", "c=3"}},
+		[]query{{"http://www.google.cn", "c=3"}},
 	},
 	{
 		"Delete pc c3 via MaxAge.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"c=3; max-age=-1"},
 		"",
-		[]query{{"http://www.google.com", ""}},
+		[]query{{"http://www.google.cn", ""}},
 	},
 	{
 		"Create persistent cookie d4.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"d=4; max-age=3600"},
 		"d=4",
-		[]query{{"http://www.google.com", "d=4"}},
+		[]query{{"http://www.google.cn", "d=4"}},
 	},
 	{
 		"Delete pc d4 via Expires.",
-		"http://www.google.com",
+		"http://www.google.cn",
 		[]string{"d=4; " + expiresIn(-10)},
 		"",
-		[]query{{"http://www.google.com", ""}},
+		[]query{{"http://www.google.cn", ""}},
 	},
 }
 

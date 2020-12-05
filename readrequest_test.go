@@ -210,12 +210,12 @@ var reqTests = []reqTest{
 
 	// CONNECT request with domain name:
 	{
-		"CONNECT www.google.com:443 HTTP/1.1\r\n\r\n",
+		"CONNECT www.google.cn:443 HTTP/1.1\r\n\r\n",
 
 		&Request{
 			Method: "CONNECT",
 			URL: &url.URL{
-				Host: "www.google.com:443",
+				Host: "www.google.cn:443",
 			},
 			Proto:         "HTTP/1.1",
 			ProtoMajor:    1,
@@ -223,8 +223,8 @@ var reqTests = []reqTest{
 			Header:        Header{},
 			Close:         false,
 			ContentLength: 0,
-			Host:          "www.google.com:443",
-			RequestURI:    "www.google.com:443",
+			Host:          "www.google.cn:443",
+			RequestURI:    "www.google.cn:443",
 		},
 
 		noBodyStr,

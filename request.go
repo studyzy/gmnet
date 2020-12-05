@@ -1037,7 +1037,7 @@ func readRequest(b *bufio.Reader, deleteHostHeader bool) (req *Request, err erro
 
 	// CONNECT requests are used two different ways, and neither uses a full URL:
 	// The standard use is to tunnel HTTPS through an HTTP proxy.
-	// It looks like "CONNECT www.google.com:443 HTTP/1.1", and the parameter is
+	// It looks like "CONNECT www.google.cn:443 HTTP/1.1", and the parameter is
 	// just the authority section of a URL. This information should go in req.URL.Host.
 	//
 	// The net/rpc package also uses CONNECT, but there the parameter is a path
@@ -1067,9 +1067,9 @@ func readRequest(b *bufio.Reader, deleteHostHeader bool) (req *Request, err erro
 
 	// RFC 7230, section 5.3: Must treat
 	//	GET /index.html HTTP/1.1
-	//	Host: www.google.com
+	//	Host: www.google.cn
 	// and
-	//	GET http://www.google.com/index.html HTTP/1.1
+	//	GET http://www.google.cn/index.html HTTP/1.1
 	//	Host: doesntmatter
 	// the same. In the second case, any Host line is ignored.
 	req.Host = req.URL.Host

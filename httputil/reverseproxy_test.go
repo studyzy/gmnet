@@ -1194,10 +1194,10 @@ func TestSingleJoinSlash(t *testing.T) {
 		slashb   string
 		expected string
 	}{
-		{"https://www.google.com/", "/favicon.ico", "https://www.google.com/favicon.ico"},
-		{"https://www.google.com", "/favicon.ico", "https://www.google.com/favicon.ico"},
-		{"https://www.google.com", "favicon.ico", "https://www.google.com/favicon.ico"},
-		{"https://www.google.com", "", "https://www.google.com/"},
+		{"https://www.google.cn/", "/favicon.ico", "https://www.google.cn/favicon.ico"},
+		{"https://www.google.cn", "/favicon.ico", "https://www.google.cn/favicon.ico"},
+		{"https://www.google.cn", "favicon.ico", "https://www.google.cn/favicon.ico"},
+		{"https://www.google.cn", "", "https://www.google.cn/"},
 		{"", "favicon.ico", "/favicon.ico"},
 	}
 	for _, tt := range tests {

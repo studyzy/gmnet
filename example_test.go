@@ -42,7 +42,7 @@ func ExampleHijacker() {
 }
 
 func ExampleGet() {
-	res, err := http.Get("http://www.google.com/robots.txt")
+	res, err := http.Get("http://www.google.cn/robots.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -26,14 +26,14 @@ import (
 
 func TestQuery(t *testing.T) {
 	req := &Request{Method: "GET"}
-	req.URL, _ = url.Parse("http://www.google.com/search?q=foo&q=bar")
+	req.URL, _ = url.Parse("http://www.google.cn/search?q=foo&q=bar")
 	if q := req.FormValue("q"); q != "foo" {
 		t.Errorf(`req.FormValue("q") = %q, want "foo"`, q)
 	}
 }
 
 func TestParseFormQuery(t *testing.T) {
-	req, _ := NewRequest("POST", "http://www.google.com/search?q=foo&q=bar&both=x&prio=1&orphan=nope&empty=not",
+	req, _ := NewRequest("POST", "http://www.google.cn/search?q=foo&q=bar&both=x&prio=1&orphan=nope&empty=not",
 		strings.NewReader("z=post&both=y&prio=2&=nokey&orphan;empty=&"))
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
 
@@ -72,7 +72,7 @@ func TestParseFormQuery(t *testing.T) {
 // Tests that we only parse the form automatically for certain methods.
 func TestParseFormQueryMethods(t *testing.T) {
 	for _, method := range []string{"POST", "PATCH", "PUT", "FOO"} {
-		req, _ := NewRequest(method, "http://www.google.com/search",
+		req, _ := NewRequest(method, "http://www.google.cn/search",
 			strings.NewReader("foo=bar"))
 		req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
 		want := "bar"
@@ -120,7 +120,7 @@ func TestParseFormUnknownContentType(t *testing.T) {
 }
 
 func TestParseFormInitializeOnError(t *testing.T) {
-	nilBody, _ := NewRequest("POST", "http://www.google.com/search?q=foo", nil)
+	nilBody, _ := NewRequest("POST", "http://www.google.cn/search?q=foo", nil)
 	tests := []*Request{
 		nilBody,
 		{Method: "GET", URL: nil},
@@ -319,7 +319,7 @@ func TestMissingFileMultipartRequest(t *testing.T) {
 
 // Test that FormValue invokes ParseMultipartForm.
 func TestFormValueCallsParseMultipartForm(t *testing.T) {
-	req, _ := NewRequest("POST", "http://www.google.com/", strings.NewReader("z=post"))
+	req, _ := NewRequest("POST", "http://www.google.cn/", strings.NewReader("z=post"))
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
 	if req.Form != nil {
 		t.Fatal("Unexpected request Form, want nil")

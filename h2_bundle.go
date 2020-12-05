@@ -9822,7 +9822,7 @@ type http2PriorityWriteSchedulerConfig struct {
 func http2NewPriorityWriteScheduler(cfg *http2PriorityWriteSchedulerConfig) http2WriteScheduler {
 	if cfg == nil {
 		// For justification of these defaults, see:
-		// https://docs.google.com/document/d/1oLhNg1skaWD4_DtaoCxdSRN5erEXrH-KnLrMwEpOtFY
+		// https://docs.google.cn/document/d/1oLhNg1skaWD4_DtaoCxdSRN5erEXrH-KnLrMwEpOtFY
 		cfg = &http2PriorityWriteSchedulerConfig{
 			MaxClosedNodesInTree:     10,
 			MaxIdleNodesInTree:       10,

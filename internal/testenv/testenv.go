@@ -13,7 +13,6 @@ package testenv
 import (
 	"errors"
 	"flag"
-	"github.com/studyzy/gmhttp/internal/cfg"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -22,6 +21,8 @@ import (
 	"strings"
 	"sync"
 	"testing"
+
+	"github.com/studyzy/gmhttp/internal/cfg"
 )
 
 // Builder reports the name of the builder running this test
@@ -221,7 +222,7 @@ func MustHaveSymlink(t testing.TB) {
 func HasLink() bool {
 	// From Android release M (Marshmallow), hard linking files is blocked
 	// and an attempt to call link() on a file will return EACCES.
-	// - https://code.google.com/p/android-developer-preview/issues/detail?id=3150
+	// - https://code.google.cn/p/android-developer-preview/issues/detail?id=3150
 	return runtime.GOOS != "plan9" && runtime.GOOS != "android"
 }
 

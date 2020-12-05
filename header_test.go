@@ -6,11 +6,12 @@ package http
 
 import (
 	"bytes"
-	"github.com/studyzy/gmhttp/internal/race"
 	"reflect"
 	"runtime"
 	"testing"
 	"time"
+
+	"github.com/studyzy/gmhttp/internal/race"
 )
 
 var headerWriteTests = []struct {

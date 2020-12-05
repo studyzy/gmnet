@@ -83,7 +83,7 @@ var reqWriteTests = []reqWriteTest{
 			Method: "GET",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Path:   "/search",
 			},
 			ProtoMajor:       1,
@@ -95,13 +95,13 @@ var reqWriteTests = []reqWriteTest{
 		Body: []byte("abcdef"),
 
 		WantWrite: "GET /search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Transfer-Encoding: chunked\r\n\r\n" +
 			chunk("abcdef") + chunk(""),
 
-		WantProxy: "GET http://www.google.com/search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+		WantProxy: "GET http://www.google.cn/search HTTP/1.1\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Transfer-Encoding: chunked\r\n\r\n" +
 			chunk("abcdef") + chunk(""),
@@ -112,7 +112,7 @@ var reqWriteTests = []reqWriteTest{
 			Method: "POST",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Path:   "/search",
 			},
 			ProtoMajor:       1,
@@ -125,14 +125,14 @@ var reqWriteTests = []reqWriteTest{
 		Body: []byte("abcdef"),
 
 		WantWrite: "POST /search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Connection: close\r\n" +
 			"Transfer-Encoding: chunked\r\n\r\n" +
 			chunk("abcdef") + chunk(""),
 
-		WantProxy: "POST http://www.google.com/search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+		WantProxy: "POST http://www.google.cn/search HTTP/1.1\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Connection: close\r\n" +
 			"Transfer-Encoding: chunked\r\n\r\n" +
@@ -145,7 +145,7 @@ var reqWriteTests = []reqWriteTest{
 			Method: "POST",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Path:   "/search",
 			},
 			ProtoMajor:    1,
@@ -158,15 +158,15 @@ var reqWriteTests = []reqWriteTest{
 		Body: []byte("abcdef"),
 
 		WantWrite: "POST /search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Connection: close\r\n" +
 			"Content-Length: 6\r\n" +
 			"\r\n" +
 			"abcdef",
 
-		WantProxy: "POST http://www.google.com/search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+		WantProxy: "POST http://www.google.cn/search HTTP/1.1\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"Connection: close\r\n" +
 			"Content-Length: 6\r\n" +
@@ -208,11 +208,11 @@ var reqWriteTests = []reqWriteTest{
 		Req: Request{
 			Method: "GET",
 			URL:    mustParseURL("/search"),
-			Host:   "www.google.com",
+			Host:   "www.google.cn",
 		},
 
 		WantWrite: "GET /search HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"\r\n",
 	},
@@ -426,7 +426,7 @@ var reqWriteTests = []reqWriteTest{
 			Method: "GET",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Opaque: "/%2F/%2F/",
 			},
 			ProtoMajor: 1,
@@ -435,7 +435,7 @@ var reqWriteTests = []reqWriteTest{
 		},
 
 		WantWrite: "GET /%2F/%2F/ HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n\r\n",
 	},
 
@@ -445,16 +445,16 @@ var reqWriteTests = []reqWriteTest{
 			Method: "GET",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "x.google.com",
-				Opaque: "//y.google.com/%2F/%2F/",
+				Host:   "x.google.cn",
+				Opaque: "//y.google.cn/%2F/%2F/",
 			},
 			ProtoMajor: 1,
 			ProtoMinor: 1,
 			Header:     Header{},
 		},
 
-		WantWrite: "GET http://y.google.com/%2F/%2F/ HTTP/1.1\r\n" +
-			"Host: x.google.com\r\n" +
+		WantWrite: "GET http://y.google.cn/%2F/%2F/ HTTP/1.1\r\n" +
+			"Host: x.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n\r\n",
 	},
 
@@ -464,7 +464,7 @@ var reqWriteTests = []reqWriteTest{
 			Method: "GET",
 			URL: &url.URL{
 				Scheme: "http",
-				Host:   "www.google.com",
+				Host:   "www.google.cn",
 				Path:   "/",
 			},
 			Proto:      "HTTP/1.1",
@@ -476,7 +476,7 @@ var reqWriteTests = []reqWriteTest{
 		},
 
 		WantWrite: "GET / HTTP/1.1\r\n" +
-			"Host: www.google.com\r\n" +
+			"Host: www.google.cn\r\n" +
 			"User-Agent: Go-http-client/1.1\r\n" +
 			"ALL-CAPS: x\r\n" +
 			"\r\n",
