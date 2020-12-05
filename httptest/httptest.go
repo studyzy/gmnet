@@ -8,7 +8,7 @@ package httptest
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"io"
 	"io/ioutil"
 	http "github.com/studyzy/gmhttp"

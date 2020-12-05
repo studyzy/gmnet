@@ -7,8 +7,8 @@
 package httptest
 
 import (
-	"crypto/tls"
-	"crypto/x509"
+	"github.com/studyzy/gmcrypto/tls"
+	"github.com/studyzy/gmcrypto/x509"
 	"flag"
 	"fmt"
 	"log"

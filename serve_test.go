@@ -12,7 +12,7 @@ import (
 	"compress/gzip"
 	"compress/zlib"
 	"context"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"encoding/json"
 	"errors"
 	"fmt"

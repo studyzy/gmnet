@@ -11,7 +11,7 @@ import (
 	"compress/gzip"
 	"crypto/rand"
 	"crypto/sha1"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"fmt"
 	"hash"
 	"io"

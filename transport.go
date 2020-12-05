@@ -14,7 +14,7 @@ import (
 	"compress/gzip"
 	"container/list"
 	"context"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"errors"
 	"fmt"
 	"io"

@@ -10,7 +10,7 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"encoding/base64"
 	"errors"
 	"fmt"

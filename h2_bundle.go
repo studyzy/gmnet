@@ -24,7 +24,7 @@ import (
 	"compress/gzip"
 	"context"
 	"crypto/rand"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"encoding/binary"
 	"errors"
 	"fmt"

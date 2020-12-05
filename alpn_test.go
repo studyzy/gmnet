@@ -7,8 +7,8 @@ package gmhttp_test
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
-	"crypto/x509"
+	"github.com/studyzy/gmcrypto/tls"
+	"github.com/studyzy/gmcrypto/x509"
 	"fmt"
 	"io"
 	"io/ioutil"

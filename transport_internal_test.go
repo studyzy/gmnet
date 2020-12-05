@@ -8,7 +8,7 @@ package gmhttp
 
 import (
 	"bytes"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"errors"
 	"io"
 	"io/ioutil"

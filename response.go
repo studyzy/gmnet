@@ -9,7 +9,7 @@ package gmhttp
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
+	"github.com/studyzy/gmcrypto/tls"
 	"errors"
 	"fmt"
 	"io"
