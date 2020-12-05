@@ -4,7 +4,7 @@
 
 // Server unit tests
 
-package http
+package gmhttp
 
 import (
 	"fmt"

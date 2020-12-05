@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/httptest"
 	"github.com/studyzy/gmhttp/internal/testenv"
 )

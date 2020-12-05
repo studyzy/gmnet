@@ -4,7 +4,7 @@
 
 // +build nethttpomithttp2
 
-package http
+package gmhttp
 
 import (
 	"errors"

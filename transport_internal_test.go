@@ -4,7 +4,7 @@
 
 // White-box tests for transport.go (in package http instead of http_test).
 
-package http
+package gmhttp
 
 import (
 	"bytes"

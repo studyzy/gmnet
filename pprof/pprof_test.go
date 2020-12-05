@@ -7,7 +7,7 @@ package pprof
 import (
 	"bytes"
 	"io/ioutil"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/httptest"
 	"runtime/pprof"
 	"testing"

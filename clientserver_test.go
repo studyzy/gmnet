@@ -4,7 +4,7 @@
 
 // Tests that use both the client & server, in both HTTP/1 and HTTP/2 mode.
 
-package http_test
+package gmhttp_test
 
 import (
 	"bytes"

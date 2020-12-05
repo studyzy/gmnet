@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/internal"
 	"os"
 	"strings"

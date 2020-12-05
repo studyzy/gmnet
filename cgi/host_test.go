@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"io"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/httptest"
 	"os"
 	"os/exec"

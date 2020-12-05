@@ -20,7 +20,7 @@ import (
 	"io"
 	"log"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"os"
 	"os/exec"
 	"path/filepath"

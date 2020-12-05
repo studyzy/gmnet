@@ -13,7 +13,7 @@ import (
 	"io"
 	"io/ioutil"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/cgi"
 	"os"
 	"strings"

@@ -6,7 +6,7 @@ package cookiejar
 
 import (
 	"fmt"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"net/url"
 	"sort"
 	"strings"

@@ -4,7 +4,7 @@
 
 // HTTP Request reading and parsing.
 
-package http
+package gmhttp
 
 import (
 	"bufio"

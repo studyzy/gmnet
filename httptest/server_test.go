@@ -8,7 +8,7 @@ import (
 	"bufio"
 	"io/ioutil"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"testing"
 )
 

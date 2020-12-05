@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"testing"
 )
 

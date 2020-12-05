@@ -4,7 +4,7 @@
 
 //go:generate bundle -o=h2_bundle.go -prefix=http2 -tags=!nethttpomithttp2 golang.org/x/net/http2
 
-package http
+package gmhttp
 
 import (
 	"io"

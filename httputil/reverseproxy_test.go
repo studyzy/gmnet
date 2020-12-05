@@ -15,7 +15,7 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"github.com/studyzy/gmhttp/httptest"
 	"net/url"
 	"os"

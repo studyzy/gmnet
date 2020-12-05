@@ -15,7 +15,7 @@ import (
 	"io"
 	"io/ioutil"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"net/url"
 	"os"
 	"strconv"

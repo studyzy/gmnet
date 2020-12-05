@@ -7,7 +7,7 @@
 // More tests are in clientserver_test.go (for things testing both client & server for both
 // HTTP/1 and HTTP/2). This
 
-package http_test
+package gmhttp_test
 
 import (
 	"bufio"

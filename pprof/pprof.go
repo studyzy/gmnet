@@ -61,7 +61,7 @@ import (
 	"html/template"
 	"io"
 	"log"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"os"
 	"runtime"
 	"runtime/pprof"

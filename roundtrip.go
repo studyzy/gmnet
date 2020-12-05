@@ -4,7 +4,7 @@
 
 // +build !js !wasm
 
-package http
+package gmhttp
 
 // RoundTrip implements the RoundTripper interface.
 //

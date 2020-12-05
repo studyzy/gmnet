@@ -3,25 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="6954c724-f340-441b-aa38-c2bc298785b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgi/integration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cgi/integration_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientserver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/clientserver_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookiejar/jar_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cookiejar/jar_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clone.go" beforeDir="false" afterPath="$PROJECT_DIR$/clone.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookie.go" beforeDir="false" afterPath="$PROJECT_DIR$/cookie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookie_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cookie_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/export_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filetransport.go" beforeDir="false" afterPath="$PROJECT_DIR$/filetransport.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filetransport_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/filetransport_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs.go" beforeDir="false" afterPath="$PROJECT_DIR$/fs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/h2_bundle.go" beforeDir="false" afterPath="$PROJECT_DIR$/h2_bundle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.go" beforeDir="false" afterPath="$PROJECT_DIR$/header.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/header_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/http_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httptrace/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/httptrace/trace.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httputil/dump_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/httputil/dump_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httputil/reverseproxy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/httputil/reverseproxy_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/testenv/testenv.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/testenv/testenv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jar.go" beforeDir="false" afterPath="$PROJECT_DIR$/jar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omithttp2.go" beforeDir="false" afterPath="$PROJECT_DIR$/omithttp2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/range_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/range_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readrequest_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/readrequest_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/request.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/request_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requestwrite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/requestwrite_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/serve_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/response_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsewrite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/responsewrite_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roundtrip.go" beforeDir="false" afterPath="$PROJECT_DIR$/roundtrip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roundtrip_js.go" beforeDir="false" afterPath="$PROJECT_DIR$/roundtrip_js.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transport_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/server_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sniff.go" beforeDir="false" afterPath="$PROJECT_DIR$/sniff.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socks_bundle.go" beforeDir="false" afterPath="$PROJECT_DIR$/socks_bundle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/status.go" beforeDir="false" afterPath="$PROJECT_DIR$/status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer.go" beforeDir="false" afterPath="$PROJECT_DIR$/transfer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/transfer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transport.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transport_internal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/transport_internal_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +48,9 @@
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1lFJH9EL89t4h3sjIGZXdShpRld" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +68,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
@@ -118,6 +139,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

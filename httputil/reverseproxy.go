@@ -12,7 +12,7 @@ import (
 	"io"
 	"log"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"net/url"
 	"strings"
 	"sync"

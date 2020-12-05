@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"fmt"
 	"io/ioutil"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"strconv"
 	"strings"
 

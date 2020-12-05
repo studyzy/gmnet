@@ -9,7 +9,7 @@ import (
 	"errors"
 	"io"
 	"io/ioutil"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"strings"
 	"testing"
 )

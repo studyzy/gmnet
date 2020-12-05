@@ -9,7 +9,7 @@ import (
 	"errors"
 	"io"
 	"net"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"net/textproto"
 	"sync"
 )

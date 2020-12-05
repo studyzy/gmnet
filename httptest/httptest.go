@@ -11,7 +11,7 @@ import (
 	"crypto/tls"
 	"io"
 	"io/ioutil"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"strings"
 )
 

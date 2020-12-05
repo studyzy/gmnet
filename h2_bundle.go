@@ -16,7 +16,7 @@
 // See https://http2.golang.org/ for a test server running this code.
 //
 
-package http
+package gmhttp
 
 import (
 	"bufio"

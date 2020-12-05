@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"os"
 	"os/exec"
 	"strconv"

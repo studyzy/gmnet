@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package http_test
+package gmhttp_test
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"github.com/studyzy/gmhttp"
+	http "github.com/studyzy/gmhttp"
 	"os"
 	"os/signal"
 )
